@@ -28,14 +28,15 @@ vector<int> generateDataset(int size)
 
     for(int &num : dataset)
     {
-        num = rand() % size;
+        num = rand() % 1001; // Limiting the Package Weight to 1000kg
     }
 
     return dataset;
 }
 
 // Function to measure execution time
-void measureExecutionTime(SortContext& context, vector<int> arr, string algoName) {
+void measureExecutionTime(SortContext& context, vector<int>& arr, string algoName)
+{
     auto start = high_resolution_clock::now();
     context.executeStrategy(arr);
     auto stop = high_resolution_clock::now();
@@ -63,7 +64,7 @@ int main() {
 
 
     //Setting Dataset Sizes For Examination
-    vector<int> datasetSizes = {50};
+    vector<int> datasetSizes = {10000, 50000, 100000, 500000, 1000000};
 
 
     srand(time(0)); // To make Sure Pure Random Variable generation
@@ -71,17 +72,25 @@ int main() {
         cout << "\nDataset size: " << size << "\n";
         vector<int> dataset = generateDataset(size);
 
-        context.setStrategy(&insertionSort); // Insertion Sort
-        measureExecutionTime(context, dataset, "Insertion Sort");
+        // Insertion Sort
+        vector<int> datasetCopy = dataset;
+        context.setStrategy(&insertionSort);
+        measureExecutionTime(context, datasetCopy, "Insertion Sort");
 
-        context.setStrategy(&heapSort); // Heap Sort
-        measureExecutionTime(context, dataset, "Heap Sort");
+        // Heap Sort
+        datasetCopy = dataset;
+        context.setStrategy(&heapSort);
+        measureExecutionTime(context, datasetCopy, "Heap Sort");
 
-        context.setStrategy(&mergeSort); // Merge Sort
-        measureExecutionTime(context, dataset, "Merge Sort");
+        // Merge Sort
+        datasetCopy = dataset;
+        context.setStrategy(&mergeSort);
+        measureExecutionTime(context, datasetCopy, "Merge Sort");
 
-        context.setStrategy(&quickSort); // Quick Sort
-        measureExecutionTime(context, dataset, "Quick Sort");
+        // Quick Sort
+        datasetCopy = dataset;
+        context.setStrategy(&quickSort);
+        measureExecutionTime(context, datasetCopy, "Quick Sort");
     }
 
 

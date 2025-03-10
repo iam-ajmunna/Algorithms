@@ -17,8 +17,10 @@ public:
 private:
     int partition(vector<int>& arr, int low, int high) {
         int pivot = arr[high], i = low - 1;
-        for (int j = low; j < high; j++) {
-            if (arr[j] < pivot) swap(arr[++i], arr[j]);
+
+        for (int j = low; j < high-1; j++) {
+            if (arr[j] < pivot)
+                swap(arr[++i], arr[j]);
         }
         swap(arr[i + 1], arr[high]);
         return i + 1;

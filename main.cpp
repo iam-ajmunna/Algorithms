@@ -39,8 +39,8 @@ void measureExecutionTime(SortContext& context, vector<int> arr, string algoName
     auto start = high_resolution_clock::now();
     context.executeStrategy(arr);
     auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<microseconds>(stop - start);
-    cout << algoName << " took " << duration.count() << " micro\n";
+    auto duration = duration_cast<milliseconds>(stop - start);
+    cout << algoName << " took " << duration.count() << " ms\n";
 }
 
 
@@ -63,7 +63,7 @@ int main() {
 
 
     //Setting Dataset Sizes For Examination
-    vector<int> datasetSizes = {10000, 50000, 100000,500000};
+    vector<int> datasetSizes = {50};
 
 
     srand(time(0)); // To make Sure Pure Random Variable generation

@@ -13,14 +13,14 @@ public:
     void sort(vector<int>& arr)  {
         int n = arr.size();
         int i,j,key;
-        for (i = 1; i < n; i++) {
+        for (j = 1; j < n; j++) {
              key = arr[i];
-             j = i - 1;
-            while (j >=0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
-                j--;
+             i = j - 1;
+            while (i >=0 && arr[i] > key) {
+                arr[i + 1] = arr[i];
+                i--;
             }
-            arr[j + 1] = key;
+            arr[i + 1] = key;
         }
     }
 };

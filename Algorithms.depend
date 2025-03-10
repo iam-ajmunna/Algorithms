@@ -42,7 +42,7 @@
 	<algorithm>
 	"StrategyContext.h"
 
-1741602833 source:e:\codes\algorithms\main.cpp
+1741612525 source:e:\codes\algorithms\main.cpp
 	<iostream>
 	<vector>
 	<cstdlib>
@@ -55,7 +55,7 @@
 	"HeapSort.h"
 	"QuickSort.h"
 
-1741602833 e:\codes\algorithms\insertionsort.h
+1741606190 e:\codes\algorithms\insertionsort.h
 	<iostream>
 	<vector>
 	<chrono>
@@ -63,15 +63,9 @@
 	<algorithm>
 	"StrategyContext.h"
 
-1741602467 e:\codes\algorithms\mergesort.h
-	<iostream>
-	<vector>
-	<chrono>
-	<string>
-	<algorithm>
-	"StrategyContext.h"
+1741613433 e:\codes\algorithms\mergesort.h
 
-1741602951 e:\codes\algorithms\heapsort.h
+1741603028 e:\codes\algorithms\heapsort.h
 	<iostream>
 	<vector>
 	<chrono>

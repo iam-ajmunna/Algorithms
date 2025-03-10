@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1741596802 source:e:\codes\algorithms\insertion sort.cpp
+	<iostream>
+	<vector>
+
+1741598739 source:e:\codes\algorithms\heapsort.cpp
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741602467 e:\codes\algorithms\strategycontext.h
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+
+1741598739 source:e:\codes\algorithms\insertionsort.cpp
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741598739 source:e:\codes\algorithms\mergesort.cpp
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741598739 source:e:\codes\algorithms\quicksort.cpp
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741602833 source:e:\codes\algorithms\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<chrono>
+	<ctime>
+	<algorithm>
+	"StrategyContext.h"
+	"InsertionSort.h"
+	"MergeSort.h"
+	"HeapSort.h"
+	"QuickSort.h"
+
+1741602833 e:\codes\algorithms\insertionsort.h
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741602467 e:\codes\algorithms\mergesort.h
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741602951 e:\codes\algorithms\heapsort.h
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
+1741602467 e:\codes\algorithms\quicksort.h
+	<iostream>
+	<vector>
+	<chrono>
+	<string>
+	<algorithm>
+	"StrategyContext.h"
+
